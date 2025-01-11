@@ -9,7 +9,7 @@ sequenceDiagram
     deactivate server
 
     browser->>server: GET 
-```mermaid
+```
 
 
 ``` mermaid
