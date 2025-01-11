@@ -4,6 +4,7 @@ sequenceDiagram
   participant browser
 
   browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/spa
+  activate server
   server->>browser: HTML document
   server->>browser: css file
   server->>browser: JavaScript file
