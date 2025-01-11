@@ -5,12 +5,12 @@ sequenceDiagram
 
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
-    server->>browser: URL redirect /exampleapp/notes
-    deactivate server
 
     Note right of browser: form data submitted via Post to /new_note
-
     Note right of server: server pulls form data from body of request object and adds to array 'notes'
+
+    server->>browser: URL redirect /exampleapp/notes
+    deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/notes
     activate server
