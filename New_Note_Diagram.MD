@@ -1,3 +1,17 @@
+```mermaid
+sequenceDiagram
+    participant browser 
+    participant server
+
+    browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+    activate server
+    server->>browser: URL redirect /exampleapp/notes
+    deactivate server
+
+    browser->>server: GET 
+```mermaid
+
+
 ``` mermaid
 sequenceDiagram
     participant browser
